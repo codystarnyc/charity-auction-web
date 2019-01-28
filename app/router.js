@@ -9,9 +9,6 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('register-user');
   this.route('login');
-  this.route('checkout-printouts');
-  this.route('cashier-summary');
-  this.route('bidder-checkout');
 });
 
 export default Router;
