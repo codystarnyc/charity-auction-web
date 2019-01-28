@@ -1,10 +1,9 @@
+// app/controllers/login.js
 import Controller from '@ember/controller';
+import { inject as service } from '@ember/service';
 
 export default Controller.extend({
-    actions:  {
-        login() {
-        console.log("LOGGIN IN...");
-        }
-       
-    }
+  session: service(), 
+
+
 });

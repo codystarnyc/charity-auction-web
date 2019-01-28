@@ -3,5 +3,10 @@
   <h1>Charity Auction Web</h1>
 {{/link-to}}
   {{link-to "Register User" "register-user"}}
-  {{link-to "Login" "login"}}
+
+  {{#if session.isAuthenticated}} 
+    <button {{action "logout"}}>Logout</button>
+  {{else}}
+    {{link-to "Login" "login"}}
+  {{/if}}
 {{outlet}}

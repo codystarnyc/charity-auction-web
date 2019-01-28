@@ -15,7 +15,12 @@ module.exports = {
     browser: true
   },
   rules: {
-  },
+    "no-console": 0, //which turns the rule off
+    "indent": "off",
+    "attribute-indentation": false,
+    "block-indentation": false,
+    "no-unused-vars": "off"
+   },
   overrides: [
     // node files
     {
