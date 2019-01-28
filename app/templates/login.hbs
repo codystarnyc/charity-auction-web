@@ -1,0 +1,15 @@
+<h3>Login</h3>
+
+<div class="input-group">
+  <label>Email address</label>
+  {{input value=username}}
+</div>
+
+<div class="input-group">
+  <label>Password</label>
+  {{input type="password" value=password}}
+</div>
+
+<button {{action "login"}}>Login</button>
+
+{{outlet}}
